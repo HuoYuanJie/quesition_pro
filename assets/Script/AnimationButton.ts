@@ -60,6 +60,7 @@ private addButtonNormalAnimation(){
 
 private addButtonToPressAnimation(){
     let node = this.node.getChildByName("icon");
+    node.scale = new Vec3(1.0, 1.0, 1.0);
     Tween.stopAllByTarget(node);
     tween(node)
         .to(0.1, {scale: new Vec3(0.7, 0.7, 1)})
